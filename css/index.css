@@ -293,6 +293,8 @@
 .little_good {
     position: relative;
     padding: 8px 29px;
+    width: 242px;
+    height: 300px;
 }
 
 .little_good img {
@@ -368,6 +370,7 @@
 
 .little_good:hover {
     border: 2px solid #27ba9b;
+    box-sizing: border-box;
 }
 
 
