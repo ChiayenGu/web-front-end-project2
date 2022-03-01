@@ -1,0 +1,414 @@
+/* 公共css */
+
+
+/* 版心 */
+
+.wapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+/* 快捷导航 */
+
+.shortcut {
+    height: 52px;
+    background-color: #333333;
+}
+
+.shortcut ul {
+    float: right;
+}
+
+.shortcut li {
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut a {
+    padding: 0 8px;
+    font-size: 14px;
+    color: #dcdcdc;
+    line-height: 16px;
+    border-right: 1px solid #666666;
+}
+
+.shortcut li:last-child a {
+    border-right: 0;
+}
+
+.shortcut li:last-child a span {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+
+/* 头部区域 */
+
+.header {
+    height: 70px;
+    margin: 30px auto;
+}
+
+.header .logo {
+    float: left;
+    height: 70px;
+    margin-left: 25px;
+    margin-right: 16px;
+}
+
+.header .logo h1 {
+    width: 207px;
+    height: 70px;
+}
+
+.header .logo a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.header .nav {
+    float: left;
+    height: 70px;
+}
+
+.header .nav li {
+    float: left;
+    line-height: 70px;
+}
+
+.header .nav li a {
+    margin: 0 24px;
+    padding-bottom: 8px;
+    box-sizing: content-box;
+}
+
+.header .nav li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+
+/* 搜索 */
+
+.search {
+    float: left;
+    margin-left: 50px;
+    width: 172px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+}
+
+.search input {
+    width: 172px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #ccc;
+    padding-left: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+}
+
+
+/* 购物车*/
+
+.cart {
+    float: right;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 10px;
+}
+
+.cart a {
+    display: inline-block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+    vertical-align: middle;
+}
+
+.cart a span {
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    width: 20px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    background-color: #e26237;
+    border-radius: 8px;
+}
+
+
+/* 联系我们 */
+
+.contact {
+    height: 302px;
+    position: relative;
+}
+
+.contact dl {
+    float: left;
+    /* width: 192px; */
+    height: 143px;
+    margin: 80px 60px;
+    margin-bottom: 0;
+}
+
+.contact dl dt {
+    color: #999999;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact dl dd {
+    display: inline-block;
+    /* height: 116px; */
+    position: relative;
+}
+
+.contact .contact_us dl dd div {
+    padding-top: 59px;
+    width: 92px;
+    height: 92px;
+    border: 1px solid #eeeeee;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+
+.contact .contact_us dl dd div span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 23px;
+    transform: translate(-50%);
+    background-image: url(../images/sprites.png);
+}
+
+.contact .one span {
+    width: 29px;
+    height: 27px;
+    background-position: -250px -70px;
+}
+
+.contact .two span {
+    width: 29px;
+    height: 29px;
+    background-position: -350px -70px;
+}
+
+.contact .three span {
+    width: 36px;
+    height: 29px;
+    background-position: -250px -15px;
+}
+
+.contact .four span {
+    width: 36px;
+    height: 29px;
+    background-position: -350px -15px;
+}
+
+.contact .one:hover span {
+    background-position: -205px -70px;
+}
+
+.contact .two:hover span {
+    background-position: -300px -70px;
+}
+
+.contact .three:hover span {
+    background-position: -205px -15px;
+}
+
+.contact .four:hover span {
+    background-position: -300px -15px;
+}
+
+.contact .download dt {
+    margin-bottom: 24px;
+}
+
+.contact .download .qrcode {
+    display: inline-block;
+    width: 116px;
+    height: 116px;
+    padding: 7px;
+    border: 2px solid #f3f3f3;
+    /* background-color: pink; */
+}
+
+.contact .download img {
+    max-width: 100%;
+}
+
+.contact .download_app {
+    display: inline-block;
+    margin-left: 22px;
+    padding-top: 13px;
+    height: 116px;
+    /* padding: 7px; */
+    vertical-align: middle;
+}
+
+.contact .download_app span {
+    display: block;
+    color: #999999;
+    padding-left: 4px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.contact .download_app a {
+    display: block;
+    width: 103px;
+    height: 32px;
+    background-color: #27ba9b;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.contact .phone dl {
+    margin-right: 0;
+}
+
+.contact .phone h4 {
+    display: block;
+    font-size: 22px;
+    color: #666666;
+    margin-top: 22px;
+    margin-bottom: 17px;
+    text-align: center;
+    line-height: 1;
+}
+
+.contact .phone span {
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1;
+}
+
+.contact .line {
+    position: absolute;
+    right: 256px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 189px;
+    border-left: 2px solid #f2f2f2;
+}
+
+.footer {
+    height: 343px;
+    background-color: #333333;
+}
+
+.footer .slogan {
+    margin: 0 auto;
+    position: relative;
+    width: 1400px;
+    height: 173px;
+    /* background-color: #27ba9b; */
+    border-bottom: 3px solid #434343;
+}
+
+.footer .slogan .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1179px;
+}
+
+.footer .slogan .center div {
+    display: inline-block;
+    margin-top: 62px;
+    margin-right: 300px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.footer .slogan .center>div:last-child {
+    margin-right: 0;
+}
+
+.footer .slogan .center div span {
+    float: left;
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+}
+
+.footer .slogan .center div span:nth-child(1) {
+    background-position: 0 0;
+}
+
+.footer .slogan .center div span:nth-child(2) {
+    background-position: -64 0;
+}
+
+.footer .slogan .center div span:nth-child(3) {
+    background-position: -130 0;
+}
+
+.footer .wapper {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer .wapper ul {
+    text-align: center;
+}
+
+.footer .wapper li {
+    display: inline;
+    line-height: 14px;
+    border-right: 1px solid #999;
+}
+
+.footer .wapper li:last-child {
+    border-right: none
+}
+
+.footer .wapper a {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer .wapper h6 {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,485 @@
+/* index自己的css */
+
+
+/* banner */
+
+.bannner {
+    background-color: #f5f5f5;
+}
+
+.bannner .wapper {
+    position: relative;
+    height: 500px;
+    background-image: url(../uploads/banner_1.png);
+    background-size: contain;
+}
+
+.bannner .left_nav {
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bannner .left_nav ul {
+    float: left;
+}
+
+.bannner .left_nav ul li {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 36px;
+}
+
+.bannner .left_nav ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.bannner h3 {
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.bannner li:hover {
+    background-color: #27ba9b;
+}
+
+.bannner a::after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -6px;
+    content: '';
+    width: 8px;
+    height: 12px;
+    color: #ffffff;
+    background-image: url(../images/sprites.png);
+    background-position: -38px -110px;
+}
+
+.bannner span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 23px;
+    color: #fff;
+    border-radius: 22px;
+    line-height: 44px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bannner span.left {
+    left: 260px;
+    background-image: url(../images/sprites.png);
+    background-position: 14px -60px;
+}
+
+.bannner span.right {
+    right: 10px;
+    background-image: url(../images/sprites.png);
+    background-position: -24px -60px;
+}
+
+
+/* 新鲜好物 */
+
+.title_area {
+    height: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.title_area h4 {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: bottom;
+}
+
+.title_area>span {
+    margin-left: 34px;
+    color: #999999;
+    vertical-align: bottom;
+}
+
+.title_area>a {
+    float: right;
+    line-height: 30px;
+    color: #999999;
+}
+
+.title_area>a::after {
+    display: inline-block;
+    margin-left: 20px;
+    content: '';
+    width: 7px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+}
+
+.row {
+    height: 405px;
+}
+
+.good {
+    float: left;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.good:last-child {
+    margin-right: 0;
+}
+
+.good img {
+    max-width: 100%;
+}
+
+.good h5 {
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.good span {
+    display: block;
+    font-size: 23px;
+    color: #9a2e1f;
+    font-weight: 700;
+}
+
+.good span::before {
+    content: '￥';
+    font-size: 17px;
+    color: #9a2e1f;
+    font-weight: 700;
+}
+
+
+/* 人气好物 */
+
+.popular .good {
+    background-color: #ffffff;
+}
+
+
+/* 热门品牌 */
+
+.brand {
+    background-color: #f5f5f5;
+    margin-top: 80px;
+    padding-top: 40px;
+    height: 466px;
+}
+
+.brand .title_area {
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+
+.brand .go_page {
+    float: right;
+    display: block;
+    margin-top: 40px;
+}
+
+.brand .go_page span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #e2e2e2;
+    background-image: url(../images/sprites.png);
+    background-size: 240px;
+}
+
+.brand .go_page span:hover {
+    background-color: #27ba9b;
+}
+
+.brand .go_page span:first-child {
+    background-position: 5px -38px;
+}
+
+.brand .go_page span:last-child {
+    background-position: -19px -38px;
+}
+
+.brand_good {
+    float: left;
+    display: in;
+    width: 244px;
+    height: 306px;
+    margin-right: 5px;
+}
+
+.brand_good:last-child {
+    margin-right: 0px;
+}
+
+.brand_good img {
+    max-width: 100%;
+}
+
+
+/* 生鲜 */
+
+.fresh .title_area {
+    /* background-color: pink; */
+}
+
+.title_area ul {
+    float: right;
+    display: block;
+    margin-right: 65px;
+}
+
+.title_area li {
+    display: inline-block;
+    /* height: 20px; */
+}
+
+.title_area li a {
+    display: inline;
+    height: 20px;
+    line-height: 30px;
+    padding: 0 7px;
+}
+
+.title_area li a:hover {
+    color: #fff;
+    background-color: #27ba9b;
+}
+
+.fresh .row2 {
+    height: 610px;
+}
+
+.fresh .row2 li {
+    float: left;
+    position: relative;
+    margin-right: 8px;
+    width: 242px;
+    height: 304px;
+}
+
+.fresh .row2 li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.fresh .cover {
+    float: left;
+    margin-right: 8px;
+    width: 240px;
+    height: 617px;
+    /* background-color: #pink; */
+}
+
+.little_good {
+    position: relative;
+    padding: 8px 29px;
+}
+
+.little_good img {
+    max-width: 184px;
+    text-align: center;
+}
+
+.little_good h5 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.little_good span {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 22px;
+    color: #9a2e1f;
+    font-weight: 700;
+}
+
+.little_good span::before {
+    content: '￥';
+    font-size: 17px;
+    color: #9a2e1f;
+    font-weight: 700;
+}
+
+.find_similar {
+    position: absolute;
+    bottom: 0px;
+    padding-top: 19px;
+    width: 242px;
+    height: 84px;
+    background-color: #27ba9b;
+    display: none;
+}
+
+.find_similar span {
+    display: block;
+    color: #fff;
+}
+
+.find_similar span:first-child {
+    /* margin-top: 19px; */
+    margin-bottom: 7px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.find_similar span:last-child {
+    margin-top: 17px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.find_similar .line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+    width: 125px;
+    height: 0px;
+    border-bottom: 2px solid #a9dbcc;
+}
+
+.little_good:hover+.find_similar {
+    display: block;
+}
+
+.little_good:hover {
+    border: 2px solid #27ba9b;
+}
+
+
+/* 最新专题 */
+
+.topic {
+    background-color: #f5f5f5;
+    margin-top: 80px;
+    padding-top: 40px;
+    height: 512px;
+}
+
+.topic .title_area {
+    margin-top: 0;
+}
+
+.topic_good {
+    position: relative;
+    float: left;
+    width: 404px;
+    height: 356px;
+    background-color: #ffffff;
+    margin-right: 13px;
+}
+
+.topic_good:last-child {
+    margin-right: 0;
+}
+
+.topic img {
+    max-width: 100%;
+}
+
+.topic_good .topic_good_title {
+    position: absolute;
+    top: 142px;
+    padding: 0 15px;
+    width: 404px;
+    height: 146px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.topic_good .topic_good_title h4 {
+    margin-top: 80px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.topic_good .topic_good_title>span {
+    /* margin-top: 80px; */
+    color: #999999;
+    /* font-size: 20px; */
+}
+
+.topic_good .topic_good_title .price {
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    padding: 0 6px;
+    width: 81px;
+    height: 27px;
+    background-color: #ffffff;
+}
+
+.topic_good .topic_good_title .price span {
+    font-size: 17px;
+    color: #9a2e1f;
+    text-align: center;
+    font-weight: 700;
+}
+
+.topic_good .topic_good_title .price span::before {
+    content: '￥';
+    font-size: 14px;
+    color: #9a2e1f;
+    font-weight: 700;
+}
+
+.topic_good .comments {
+    /* height: 67px; */
+    padding: 0 17px;
+}
+
+.topic_good .comments a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 68px;
+}
+
+.topic_good .comments a:first-child {
+    margin-right: 24px;
+}
+
+.topic_good .comments a:last-child {
+    float: right;
+}
+
+.topic_good .comments a span {
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+}
+
+.topic_good .comments a:nth-child(1) span {
+    background-position: -120px -110px;
+}
+
+.topic_good .comments a:nth-child(2) span {
+    background-position: -160px -110px;
+}
+
+.topic_good .comments a:nth-child(3) span {
+    background-position: -200px -110px;
+}
