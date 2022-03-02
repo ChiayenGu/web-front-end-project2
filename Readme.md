@@ -4,7 +4,7 @@
 
 ---
 
-[[课程地址]](https://www.bilibili.com/video/BV1Kg411T7t9?p=184)    [[综合案例1作业 ]](学成在线)
+[[课程地址]](https://www.bilibili.com/video/BV1Kg411T7t9?p=184)    [[综合案例1作业 ]](https://github.com/ChiayenGu/web-front-end-project)
 
 ---
 
