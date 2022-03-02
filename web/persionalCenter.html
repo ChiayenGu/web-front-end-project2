@@ -57,7 +57,7 @@
     <div class="mainbody clearfix">
         <div class="wapper">
             <!-- 侧边导航 -->
-            <div class="left_nav">
+            <div class="left_nav clearfix">
                 <div>
                     <dl>
                         <dt> 我的账户 </dt>
@@ -95,18 +95,17 @@
                         <dt> 帮助中心 </dt>
                         <dd><a href="#">帮助中心</a></dd>
                         <dd><a href="#">在线客服</a></dd>
-
                     </dl>
                 </div>
-
             </div>
+            <!-- 右边布局 -->
             <div class="right">
+                <!-- 个人中心 -->
                 <div class="person">
                     <div class="profile middle">
                         <div><img src="../uploads/avatar_1.png" alt="profile"></div>
                         <span>张小花</span>
                     </div>
-
                     <div class="settings middle">
                         <ul>
                             <li><a href="#"><span></span>
@@ -121,36 +120,169 @@
                         </ul>
                     </div>
                 </div>
+                <!-- 订单区 -->
                 <div class="order">
-                    <div class="title_area"></div>
-                    <div class="order_detail">
-                        <div><img src="" alt="">
-                            <span>劳伦xxx品名</span>
-                            <span>颜色：白色</span>
+                    <div class="title_area">
+                        <h4>我的订单</h4>
+                        <!-- <span>新鲜出炉 品质靠谱</span> -->
+                        <a href="#">查看全部</a>
+                    </div>
+                    <div class="order_detail clearfix">
+                        <div class="order_name">
+                            <img src="../uploads/clothes_goods_5.jpg" alt="">
+                            <div>
+                                <span>拉夫劳伦t恤男正品圆领短袖...</span>
+                                <span>颜色：白色 尺码：M 数量：1</span>
+                            </div>
+                            <div><span>待付款</span>
+                                <!-- <a href="#">查看物流</a> -->
+                            </div>
                         </div>
-                        <div>待付款</div>
-                        <div>
-                            <span>99</span>
-                            <span>含运费</span>
-                            <a href="#">在线支付</a>
+                        <div class="price_width">
+                            <div class="price middle">
+                                <span>99</span>
+                                <span>（含运费：¥10.00元）</span>
+                                <span>在线支付</span>
+                            </div>
                         </div>
-                        <div>
-                            <a href="#">立即付款</a>
-                            <a href="#">查看详情</a>
-                            <a href="#">取消订单</a>
+                        <div class="button_height">
+                            <div class="button middle">
+                                <a href="#">立即付款</a>
+                                <a href="#">查看详情</a>
+                                <a href="#">取消订单</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="collection">
+                    <div class="order_detail clearfix">
+                        <div class="order_name">
+                            <img src="../uploads/clothes_goods_6.jpg" alt="">
+                            <div>
+                                <span>李宁跑步鞋男鞋空气弧...</span>
+                                <span>颜色：灰色  尺码：42  数量：1</span>
+                            </div>
+                            <div><span>待收货</span>
+                                <a href="#">查看物流</a></div>
+                        </div>
+                        <div class="price_width">
+                            <div class="price middle">
+                                <span>99</span>
+                                <span>（含运费：¥10.00元）</span>
+                                <span>在线支付</span>
+                            </div>
+                        </div>
+                        <div class="button_height">
+                            <div class="button middle">
+                                <a href="#">确认收货</a>
+                                <a href="#">查看详情</a>
+                                <a href="#">再次购买</a>
+                            </div>
+                        </div>
+                    </div>
 
+
+                </div>
+
+                <!-- 收藏区 -->
+                <div class="collection">
+                    <div class="title_area">
+                        <h4>我的收藏</h4>
+                    </div>
+                    <div class="colletcion_detail">
+                        <ul>
+                            <li>
+                                <div class="little_good">
+                                    <a href="#"><img src="../uploads/fresh_goods_1.jpg" alt="little_good">
+                                        <h5>美威 智利原味三文鱼排240g/袋 4片装</h5>
+                                        <h5>海鲜年货</h5>
+                                        <span>899</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="little_good">
+                                    <a href="#"><img src="../uploads/fresh_goods_2.jpg" alt="little_good">
+                                        <h5>美威 智利原味三文鱼排240g/袋 4片装</h5>
+                                        <h5>海鲜年货</h5>
+                                        <span>899</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="little_good">
+                                    <a href="#"><img src="../uploads/fresh_goods_3.jpg" alt="little_good">
+                                        <h5>美威 智利原味三文鱼排240g/袋 4片装</h5>
+                                        <h5>海鲜年货</h5>
+                                        <span>899</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="little_good">
+                                    <a href="#"><img src="../uploads/fresh_goods_4.jpg" alt="little_good">
+                                        <h5>美威 智利原味三文鱼排240g/袋 4片装</h5>
+                                        <h5>海鲜年货</h5>
+                                        <span>899</span>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- 足迹区 -->
+                <div class="collection">
+                    <div class="title_area">
+                        <h4>我的足迹</h4>
+                        <!-- <span>新鲜出炉 品质靠谱</span> -->
+                        <!-- <a href="#">查看全部</a> -->
+                    </div>
+                    <div class="colletcion_detail">
+                        <ul>
+                            <li>
+                                <div class="little_good">
+                                    <a href="#"><img src="../uploads/clothes_goods_1.jpg" alt="little_good">
+                                        <h5>美威 智利原味三文鱼排240g/袋 4片装</h5>
+                                        <h5>海鲜年货</h5>
+                                        <span>899</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="little_good">
+                                    <a href="#"><img src="../uploads/clothes_goods_2.jpg" alt="little_good">
+                                        <h5>美威 智利原味三文鱼排240g/袋 4片装</h5>
+                                        <h5>海鲜年货</h5>
+                                        <span>899</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="little_good">
+                                    <a href="#"><img src="../uploads/fresh_goods_1.jpg" alt="little_good">
+                                        <h5>美威 智利原味三文鱼排240g/袋 4片装</h5>
+                                        <h5>海鲜年货</h5>
+                                        <span>899</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="little_good">
+                                    <a href="#"><img src="../uploads/fresh_goods_1.jpg" alt="little_good">
+                                        <h5>美威 智利原味三文鱼排240g/袋 4片装</h5>
+                                        <h5>海鲜年货</h5>
+                                        <span>899</span>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-
-
     <!-- 联系我们 -->
     <div class="contact wapper">
         <div class="contact_us">
@@ -202,10 +334,9 @@
                 </dd>
             </dl>
         </div>
-
     </div>
     <!-- 版权区域 -->
-    <div class=" footer ">
+    <div class=" footer">
         <div class="slogan ">
             <div class="center ">
                 <div><span></span>价格亲民</div>
@@ -227,6 +358,5 @@
         </div>
     </div>
 </body>
-
 
 </html>

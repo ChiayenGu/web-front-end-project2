@@ -290,40 +290,6 @@
     /* background-color: #pink; */
 }
 
-.little_good {
-    position: relative;
-    padding: 8px 29px;
-    width: 242px;
-    height: 300px;
-}
-
-.little_good img {
-    max-width: 184px;
-    text-align: center;
-}
-
-.little_good h5 {
-    font-size: 16px;
-    color: #333333;
-    font-weight: normal;
-    line-height: 1.2;
-}
-
-.little_good span {
-    display: inline-block;
-    margin-top: 15px;
-    font-size: 22px;
-    color: #9a2e1f;
-    font-weight: 700;
-}
-
-.little_good span::before {
-    content: '￥';
-    font-size: 17px;
-    color: #9a2e1f;
-    font-weight: 700;
-}
-
 .find_similar {
     position: absolute;
     bottom: 0px;

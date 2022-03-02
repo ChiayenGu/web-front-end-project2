@@ -1,40 +1,43 @@
 /* 个人中心 */
 
-.middle{
+.middle {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
+
 /* 主要背景颜色 */
-.mainbody{
+
+.mainbody {
     padding: 20px;
     background-color: #f6f6f6;
 }
 
-.left_nav{
+.left_nav {
     float: left;
     width: 224px;
     /* height: 1120px; */
     background-color: #fff;
+}
 
-    
-}
-.left_nav div{
+.left_nav div {
     border-bottom: 2px solid #f4f4f4;
-    padding:13px 52px; 
+    padding: 13px 52px;
 }
-.left_nav dt{
+
+.left_nav dt {
     margin-top: 27px;
     margin-bottom: 30px;
 }
-.left_nav dd{
+
+.left_nav dd {
     font-size: 14px;
     color: #666666;
     margin-bottom: 27px;
 }
 
-.left_nav a::before{ 
+.left_nav a::before {
     content: '';
     display: none;
     width: 6px;
@@ -46,41 +49,47 @@
     margin-right: 9px;
 }
 
-.left_nav dd:hover a{
+.left_nav dd:hover a {
     color: #5eb69c;
 }
-.left_nav dd:hover a::before{
-    display:inline-block;
+
+.left_nav dd:hover a::before {
+    display: inline-block;
 }
+
 
 /* 右侧页面 */
 
-.mainbody .right{
+.mainbody .right {
     width: 996px;
     float: right;
     /* background-color: pink; */
 }
 
-.mainbody .right>*{
-    margin-bottom:20px;
+.mainbody .right>* {
+    margin-bottom: 20px;
 }
+
+
 /* 会员中心 */
 
-.mainbody .right .person{
+.mainbody .right .person {
     width: 996px;
     height: 132px;
-    background: linear-gradient(115deg,rgba(88, 189, 169, 0.829),rgba(38, 185, 155, 1));
+    background: linear-gradient(115deg, rgba(88, 189, 169, 0.829), rgba(38, 185, 155, 1));
     position: relative;
 }
 
+
 /* 会员头像 */
-.mainbody .right .person .profile{
+
+.mainbody .right .person .profile {
     display: inline-block;
     height: 86px;
     margin-left: 53px;
 }
 
-.mainbody .right .person .profile div{
+.mainbody .right .person .profile div {
     display: inline-block;
     width: 86px;
     height: 86px;
@@ -88,14 +97,13 @@
     border: 2px solid #ffffff;
     padding: 3px;
     /* box-sizing: content-box; */
-
 }
 
-.mainbody .right .person .profile img{
+.mainbody .right .person .profile img {
     max-width: 100%;
 }
 
-.mainbody .right .person .profile span{
+.mainbody .right .person .profile span {
     margin-left: 26px;
     display: inline-block;
     font-size: 18px;
@@ -103,19 +111,18 @@
     vertical-align: middle;
 }
 
-.mainbody .right .settings{
+.mainbody .right .settings {
     height: 61px;
     right: 0px
 }
 
-.mainbody .right .settings li{
+.mainbody .right .settings li {
     display: inline-block;
     margin: 0 53px;
-
 }
 
-.mainbody .right .settings a{
-    display: block;
+.mainbody .right .settings a {
+    display: inline-block;
     width: 64px;
     height: 61px;
     text-align: center;
@@ -123,32 +130,230 @@
     position: relative;
 }
 
-.mainbody .right .settings span{
+.mainbody .right .settings span {
     display: inline-block;
-
     /* text-align: center; */
+    background-image: url(../images/sprites.png);
+}
+
+.settings li:nth-child(1) span {
     width: 32px;
     height: 29px;
-    background-image: url(../images/sprites.png);
-    background-position: -2px -160px;
+    background-position: -88px -159px;
 }
-.mainbody .right .settings p{
+
+.settings li:nth-child(2) span {
+    width: 32px;
+    height: 29px;
+    background-position: -2px -159px;
+}
+
+.settings li:nth-child(3) span {
+    width: 22px;
+    height: 32px;
+    background-position: -50px -156px;
+}
+
+.mainbody .right .settings p {
     position: absolute;
     bottom: 0%;
     line-height: 1;
     color: #ffffff;
 }
 
+
 /* 订单 */
-.mainbody .order{
+
+.order {
     width: 996px;
-	height: 374px;
-	background-color: #ffffff;
-    padding: 12px;
+    height: 374px;
+    background-color: #ffffff;
+    padding: 20px 12px;
 }
 
-.mainbody .order .order_detail{
-        width: 972px;
-        height: 137px;
-        border: solid 1px #f4f4f4;
+
+/* 订单标题区域 */
+
+.title_area {
+    height: 20px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.title_area h4 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+    font-weight: normal;
+    /* vertical-align: bottom; */
+}
+
+.title_area>a {
+    float: right;
+    line-height: 20px;
+    color: #999999;
+}
+
+.title_area>a::after {
+    display: inline-block;
+    margin-left: 6px;
+    content: '';
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+}
+
+
+/* 订单详细区 */
+
+.order .order_detail {
+    display: block;
+    width: 972px;
+    height: 137px;
+    max-height: 137px;
+    min-width: 972px;
+    border: solid 1px #f4f4f4;
+    border-right: none;
+}
+
+.order .order_detail>* {
+    float: left;
+    /* display: inline-block; */
+    vertical-align: top;
+    position: relative;
+    height: 137px;
+    border-right: 1px solid #f4f4f4;
+}
+
+.order .order_detail .order_name {
+    width: 590px;
+    padding: 14px;
+}
+
+.order .order_detail .order_name img {
+    float: left;
+    max-height: 100%;
+}
+
+.order .order_detail .order_name div {
+    float: left;
+    /* height: 137px; */
+    margin-left: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.order .order_detail .order_name div span {
+    display: block;
+}
+
+.order .order_detail .order_name div span:nth-of-type(2) {
+    font-size: 14px;
+    color: #999999;
+}
+
+.order .order_detail .order_name>div:nth-of-type(2) {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 83px;
+    width: 56px;
+    font-size: 14px;
+    color: #e05e30;
+    text-align: center;
+}
+
+.order .order_detail .order_name>div:nth-of-type(2) a {
+    color: #999999;
+    font-size: 14px;
+}
+
+
+/* 价格部分 */
+
+.price_width {
+    /* width: 200px; */
+    /* max-width: 200px; */
+}
+
+.price {
+    display: block;
+    width: 200px;
+    border: none;
+}
+
+.price span {
+    display: block;
+    font-size: 14px;
+    /* margin: 0 auto; */
+    text-align: center;
+    width: 100%;
+}
+
+.price span:nth-of-type(1) {
+    color: #9a2e1f;
+}
+
+.price span:nth-child(1):before {
+    content: '￥';
+    font-size: 14px;
+    color: #9a2e1f;
+}
+
+
+/* 付款按钮 */
+
+.order_detail .button_height {
+    width: 180px;
+    float: right;
+    /* position: absolute; */
+    right: 0;
+    border-left: 1px solid #f4f4f4;
+    /* position: relative; */
+}
+
+.order_detail .button {
+    width: 180px;
+}
+
+.order_detail .button>* {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    /* vertical-align: middle; */
+    margin: 0 auto;
+}
+
+.order_detail .button a:first-child {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #27ba9b;
+    border-radius: 2px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+/* 收藏区 */
+
+.collection {
+    width: 996px;
+    height: 400px;
+    background-color: #ffffff;
+    padding: 20px 12px;
+}
+
+.colletcion_detail ul {
+    border-top: 1px solid #f6f6f6;
+    margin-bottom: 37px;
+}
+
+.colletcion_detail ul li {
+    float: left;
+    display: block;
 }
